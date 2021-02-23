@@ -1,23 +1,21 @@
-body{
+body {
+    background: linear-gradient(270deg, rgba(216, 165, 208, 0.352464) 0%, rgba(235, 208, 230, 0.184801) 39.58%, rgba(255, 255, 255, 0) 54.17%), #FFFFFF;
     margin: 0;
-    
-
     font-family: Angkor;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
     line-height: 80px;
-
     color: #5B5B5B;
 }
 
 *,
 *:before,
-*:after{
+*:after {
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -25,114 +23,112 @@ body{
     top: 52px;
 }
 
-.FIO{
-    width: 100%;
-    left: 378px;
+.FIO {
+    left: 1000%;
+    top: 15px;
 }
 
-.data{
+.data {
     width: 100%;
     height: 100vh;
     left: 378px;
 }
 
-.leftblock{
+.leftblock {
     position: absolute;
-    width: 175px;
+    width: 10%;
     height: 150vh;
     left: 0px;
     top: 0px;
-
     background: linear-gradient(339.15deg, #FFFFFF 0%, rgba(203, 4, 183, 0) 60.43%), #820065;
     background-blend-mode: lighten, normal;
 }
 
-.pictureblock{
+.pictureblock {
     position: absolute;
     width: 264px;
     height: 381px;
-    left: 70%;
+    left: 70vmax;
     top: 35px;
-
     background: #820065;
     border-radius: 13px;
 }
 
-.picture{
-    position:absolute;
+.picture {
+    position: absolute;
     width: 232px;
     height: 346px;
     left: 16px;
     top: 17.5px;
-    
     background-image: url(https://sun9-4.userapi.com/impf/c855532/v855532232/af577/Ab-hUQkHyp0.jpg?size=810x1080&quality=96&sign=fd7b437373aa34c71fb12c39db3a147f&type=album);
     background-size: cover;
 }
 
-table.SkillTable{
-	width: 75%;
-	border-collapse:collapse;
-	border-spacing:0;
-	height: auto;
-     }
-table.SkillTable,table.SkillTable td{
+table.SkillTable {
+    width: 75%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+}
+
+table.SkillTable,
+table.SkillTable td {
     border: 1px solid #595959;
-	background-color: #FFFFFF;
-     }
-table.SkillTable th{
+    background-color: #FFFFFF;
+}
+
+table.SkillTable th {
     color: #5e5e5e;
     border: 1px solid #595959;
     background-color: #ffe0f8;
 }
-table.SkillTable td,table.SkillTable th {
-	min-height:35px;padding: 3px; 
-	width: 30px;
-	height: 35px; }
 
+table.SkillTable td,
+table.SkillTable th {
+    min-height: 35px;
+    padding: 3px;
+    width: 30px;
+    height: 35px;
+}
 
-@media screen and (max-width: 575px)
-{
-    body{
+@media screen and (max-width: 1250px) {
+    body {
         margin: 0;
-    
-
         font-family: Angkor;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 44px;
-    
         color: #5B5B5B;
     }
-    .container{
+    .container {
         width: 100%;
         padding: 0 15px;
     }
-    .leftblock{
+    .leftblock {
         position: absolute;
         width: 0;
     }
-    .pictureblock{
+    .pictureblock {
         position: absolute;
         width: 99px;
         height: 142px;
         left: 50%;
         top: 5px;
-    
         background: #820065;
         border-radius: 13px;
     }
-    .picture{
+    .picture {
         width: 87px;
         height: 129.75px;
         left: 6px;
         top: 6.6px;
     }
-    .FIO{
+    .FIO {
         width: 50%;
         left: 378px;
     }
-    .data{
+    .data {
         width: 50%;
         height: 100vh;
         left: 378px;
