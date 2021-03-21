@@ -1,12 +1,12 @@
 body {
-    background: linear-gradient(270deg, rgba(216, 165, 208, 0.352464) 0%, rgba(235, 208, 230, 0.184801) 39.58%, rgba(255, 255, 255, 0) 54.17%), #FFFFFF;
+    background-image: url(https://papers.co/wallpaper/papers.co-vt30-abstract-polygon-bw-pattern-gray-29-wallpaper.jpg);
     margin: 0;
-    font-family: Angkor;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 80px;
-    color: #5B5B5B;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
 }
 
 *,
@@ -15,122 +15,285 @@ body {
     box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    left: 10%;
-    top: 52px;
-}
-
-.FIO {
-    left: 1000%;
-    top: 15px;
-}
-
-.data {
-    width: 100%;
-    height: 100vh;
-    left: 378px;
-}
-
-.leftblock {
+.imageBlock {
     position: absolute;
-    width: 10%;
-    height: 150vh;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+
+.headBlock {
+    position: absolute;
+    width: 100%;
+    height: 150px;
     left: 0px;
     top: 0px;
-    background: linear-gradient(339.15deg, #FFFFFF 0%, rgba(203, 4, 183, 0) 60.43%), #820065;
-    background-blend-mode: lighten, normal;
+    background: #000000;
+    border-radius: 0px 0px 25px 25px;
 }
 
-.pictureblock {
+.headText {
     position: absolute;
-    width: 264px;
-    height: 381px;
-    left: 70vmax;
-    top: 35px;
-    background: #820065;
+    width: 95%;
+    height: 101px;
+    left: 40px;
+    top: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 99px;
+    color: #FFFFFF;
+}
+
+.infoBlock {
+    position: absolute;
+    width: 60%;
+    height: 1050px;
+    left: 0;
+    top: 150px;
+    margin: 0 20%;
+    background: #FFFFFF;
+    align-items: center;
+}
+
+.infoText {
+    position: absolute;
+    width: 62%;
+    height: 180px;
+    left: 5%;
+    top: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.photoBlock {
+    position: absolute;
+    width: 28%;
+    height: 470px;
+    margin: 50px 0 0 67%;
+    background: #000000;
     border-radius: 13px;
 }
 
-.picture {
+.photoImage {
     position: absolute;
-    width: 232px;
-    height: 346px;
-    left: 16px;
-    top: 17.5px;
-    background-image: url(https://sun9-4.userapi.com/impf/c855532/v855532232/af577/Ab-hUQkHyp0.jpg?size=810x1080&quality=96&sign=fd7b437373aa34c71fb12c39db3a147f&type=album);
+    width: 90%;
+    height: 423px;
+    margin: 23.5px 5%;
+    background-image: url(https://sun9-4.userapi.com/impf/c855532/v855532232/af577/Ab-hUQkHyp0.jpg?size=1536x2048&quality=96&sign=a20cab9aef7b212c6dd304017dd4ba31&type=album);
     background-size: cover;
 }
 
+.contactsText {
+    position: absolute;
+    width: 62%;
+    height: 180px;
+    left: 5%;
+    top: 680px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
+}
+
 table.SkillTable {
-    width: 75%;
+    position: absolute;
+    width: 60%;
+    height: 80px;
+    left: 5%;
+    top: 180px;
     border-collapse: collapse;
     border-spacing: 0;
-    height: auto;
+    font-size: 24px;
+    text-align: center;
 }
 
 table.SkillTable,
 table.SkillTable td {
-    border: 1px solid #595959;
-    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    background-color: #ffffff;
 }
 
 table.SkillTable th {
-    color: #5e5e5e;
-    border: 1px solid #595959;
-    background-color: #ffe0f8;
+    border: 1px solid #000000;
+    background-color: #cacaca;
 }
 
-table.SkillTable td,
-table.SkillTable th {
-    min-height: 35px;
-    padding: 3px;
-    width: 30px;
-    height: 35px;
-}
-
-@media screen and (max-width: 1250px) {
-    body {
-        margin: 0;
-        font-family: Angkor;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 44px;
-        color: #5B5B5B;
+@media screen and (max-width: 1640px) {
+    table.SkillTable {
+        top: 220px;
     }
-    .container {
+    .contactsText {
+        top: 710px;
+    }
+    .infoBlock {
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .contactsText {
+        top: 785px;
+    }
+    .infoBlock {
+        height: 1175px;
+    }
+}
+
+@media screen and (max-width: 1303px) {
+    table.SkillTable {
+        top: 280px;
+    }
+    .contactsText {
+        top: 825px;
+    }
+    .infoBlock {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 1273px) {
+    .contactsText {
+        top: 955px;
+        width: 80%;
+    }
+    .infoBlock {
+        height: 1550px;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .photoBlock {
+        width: 62%;
+        height: 470px;
+        margin: 50px 0 0 5%;
+    }
+    .infoText {
+        top: 530px;
+        width: 90%;
+    }
+    table.SkillTable {
+        top: 730px;
+        width: 90%;
+    }
+    .contactsText {
+        top: 1235px;
+        width: 90%;
+    }
+    .infoBlock {
+        height: 1630px;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .headText,
+    .contactsText {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 921px) {
+    .contactsText {
+        top: 1285px;
+    }
+    .infoBlock {
+        height: 1680px;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    table.SkillTable {
+        top: 780px;
+    }
+    .contactsText {
+        top: 1335px;
+    }
+    .infoBlock {
+        height: 1730px;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .contactsText {
+        top: 1450px;
+    }
+    .infoBlock {
+        height: 1850px;
+    }
+}
+
+@media screen and (max-width: 807px) {
+    .contactsText {
+        font-size: 26px;
+    }
+    .infoBlock {
+        height: 1980px;
+    }
+}
+
+@media screen and (max-width: 753px) {
+    .contactsText {
+        top: 1500px;
+    }
+    .infoBlock {
+        height: 1900px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .headText {
+        font-size: 30px;
+    }
+    .infoBlock {
         width: 100%;
-        padding: 0 15px;
+        left: 0;
+        top: 125px;
+        margin: 0 0;
     }
-    .leftblock {
-        position: absolute;
-        width: 0;
+    table.SkillTable {
+        top: 650px;
     }
-    .pictureblock {
-        position: absolute;
-        width: 99px;
-        height: 142px;
-        left: 50%;
-        top: 5px;
-        background: #820065;
-        border-radius: 13px;
+    .contactsText {
+        top: 1135px;
     }
-    .picture {
-        width: 87px;
-        height: 129.75px;
-        left: 6px;
-        top: 6.6px;
+    .infoBlock {
+        height: 1520px;
     }
-    .FIO {
-        width: 50%;
-        left: 378px;
+}
+
+@media screen and (max-width: 687px) {
+    table.SkillTable {
+        top: 710px;
     }
-    .data {
-        width: 50%;
-        height: 100vh;
-        left: 378px;
+    .contactsText {
+        top: 1195px;
+    }
+    .infoBlock {
+        height: 1580px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    table.SkillTable {
+        top: 770px;
+    }
+    .contactsText {
+        top: 1325px;
+    }
+    .infoBlock {
+        height: 1720px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contactsText {
+        top: 1435px;
+    }
+    .infoBlock {
+        height: 1830px;
     }
 }
